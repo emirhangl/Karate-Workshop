@@ -1,0 +1,745 @@
+09:34:29.569 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class examples.users.UsersRunner
+09:34:29.773 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/examples/users/users.feature
+09:34:30.762 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+09:34:32.593 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1397
+09:34:32.988 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 69
+09:34:33.128 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+09:34:34.051 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 757
+09:34:34.100 [main] INFO  com.intuit.karate.StepDefs - [print] created id is: 11
+09:51:04.300 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class examples.ExamplesTest
+09:51:04.466 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/examples/users/users.feature
+09:51:05.459 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+09:51:07.760 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1850
+09:51:08.392 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 364
+09:51:08.522 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+09:51:09.689 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1005
+09:51:09.772 [main] INFO  com.intuit.karate.StepDefs - [print] created id is: 11
+09:53:00.309 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+09:53:00.480 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+09:53:01.331 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+09:56:12.851 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+09:56:13.000 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+09:56:13.995 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+09:56:16.663 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 2386
+09:56:16.866 [main] ERROR com.intuit.karate.StepDefs - FAILED, path: $.name, actual: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="NONE,NOARCHIVE" />
+<title>Django REST framework</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.a987f72342ee.css" />
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.14cc59083a7d.css" />
+</head>
+<body class="">
+<div class="wrapper">
+<div class="navbar navbar-static-top ">
+<div class="container">
+<span>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand" href="#"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://swapi.co" data-text="SWAPI - the Star Wars API " data-via="phalt_" data-related="phalt_">Tweet</a>
+<script type="2d40554ad71d261b2b4b7cfe-text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/documentation">Documentation</a></li>
+</ul>
+</div>
+</span>
+<ul class="nav navbar-nav pull-right">
+</ul>
+</div>
+</div>
+<div class="container">
+<ul class="breadcrumb">
+<li><a href="/api/">Api Root</a></li>
+<li><a href="/api/people/">People List</a></li>
+<li class="active"><a href="/api/people/1/">People Instance</a></li>
+</ul>
+
+<div id="content">
+<form id="get-form" class="pull-right">
+<fieldset>
+<div class="btn-group format-selection">
+<a class="btn btn-primary js-tooltip" href='/api/people/1/' rel="nofollow" title="Make a GET request on the People Instance resource">GET</a>
+<button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=json' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `json`">
+json
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=api' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `api`">
+api
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=wookiee' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `wookiee`">
+wookiee
+</a>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+<form class="button-form" action="/api/people/1/" method="POST">
+<input type='hidden' name='csrfmiddlewaretoken' value='A8g9JbvRMAgGZbECeDk1IqXxcKq9Y1rd' />
+<input type="hidden" name="_method" value="OPTIONS" />
+<button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the People Instance resource">OPTIONS</button>
+</form>
+<div class="content-main">
+<div class="page-header">
+<h1>People Instance</h1>
+</div>
+<div class="request-info" style="clear: both">
+<pre class="prettyprint"><b>GET</b> /api/people/1/</pre>
+</div>
+<div class="response-info">
+<pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+
+</span>{
+    &quot;name&quot;: &quot;Luke Skywalker&quot;, 
+    &quot;height&quot;: &quot;172&quot;, 
+    &quot;mass&quot;: &quot;77&quot;, 
+    &quot;hair_color&quot;: &quot;blond&quot;, 
+    &quot;skin_color&quot;: &quot;fair&quot;, 
+    &quot;eye_color&quot;: &quot;blue&quot;, 
+    &quot;birth_year&quot;: &quot;19BBY&quot;, 
+    &quot;gender&quot;: &quot;male&quot;, 
+    &quot;homeworld&quot;: &quot;<a href="https://swapi.co/api/planets/1/" rel="nofollow">https://swapi.co/api/planets/1/</a>&quot;, 
+    &quot;films&quot;: [
+        &quot;<a href="https://swapi.co/api/films/2/" rel="nofollow">https://swapi.co/api/films/2/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/6/" rel="nofollow">https://swapi.co/api/films/6/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/3/" rel="nofollow">https://swapi.co/api/films/3/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/1/" rel="nofollow">https://swapi.co/api/films/1/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/7/" rel="nofollow">https://swapi.co/api/films/7/</a>&quot;
+    ], 
+    &quot;species&quot;: [
+        &quot;<a href="https://swapi.co/api/species/1/" rel="nofollow">https://swapi.co/api/species/1/</a>&quot;
+    ], 
+    &quot;vehicles&quot;: [
+        &quot;<a href="https://swapi.co/api/vehicles/14/" rel="nofollow">https://swapi.co/api/vehicles/14/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/vehicles/30/" rel="nofollow">https://swapi.co/api/vehicles/30/</a>&quot;
+    ], 
+    &quot;starships&quot;: [
+        &quot;<a href="https://swapi.co/api/starships/12/" rel="nofollow">https://swapi.co/api/starships/12/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/starships/22/" rel="nofollow">https://swapi.co/api/starships/22/</a>&quot;
+    ], 
+    &quot;created&quot;: &quot;2014-12-09T13:50:51.644000Z&quot;, 
+    &quot;edited&quot;: &quot;2014-12-20T21:17:56.891000Z&quot;, 
+    &quot;url&quot;: &quot;<a href="https://swapi.co/api/people/1/" rel="nofollow">https://swapi.co/api/people/1/</a>&quot;
+}</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="/static/rest_framework/js/jquery-1.8.1-min.1565a889b7d5.js" type="2d40554ad71d261b2b4b7cfe-text/javascript"></script>
+<script src="/static/rest_framework/js/bootstrap.min.abda843684d0.js" type="2d40554ad71d261b2b4b7cfe-text/javascript"></script>
+<script src="/static/rest_framework/js/prettify-min.709bfcc456c6.js" type="2d40554ad71d261b2b4b7cfe-text/javascript"></script>
+<script src="/static/rest_framework/js/default.33da14300902.js" type="2d40554ad71d261b2b4b7cfe-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="2d40554ad71d261b2b4b7cfe-|49" defer=""></script></body>
+</html>
+, expected: com.jayway.jsonpath.internal.JsonContext@7d151a, reason: not a sub-string
+10:48:16.727 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+10:48:16.963 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+10:48:18.347 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+10:48:20.503 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1836
+10:48:20.624 [main] ERROR com.intuit.karate.StepDefs - FAILED, path: $.name, actual: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="NONE,NOARCHIVE" />
+<title>Django REST framework</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.a987f72342ee.css" />
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.14cc59083a7d.css" />
+</head>
+<body class="">
+<div class="wrapper">
+<div class="navbar navbar-static-top ">
+<div class="container">
+<span>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand" href="#"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://swapi.co" data-text="SWAPI - the Star Wars API " data-via="phalt_" data-related="phalt_">Tweet</a>
+<script type="3124441744333cb90544015c-text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/documentation">Documentation</a></li>
+</ul>
+</div>
+</span>
+<ul class="nav navbar-nav pull-right">
+</ul>
+</div>
+</div>
+<div class="container">
+<ul class="breadcrumb">
+<li><a href="/api/">Api Root</a></li>
+<li><a href="/api/people/">People List</a></li>
+<li class="active"><a href="/api/people/1/">People Instance</a></li>
+</ul>
+
+<div id="content">
+<form id="get-form" class="pull-right">
+<fieldset>
+<div class="btn-group format-selection">
+<a class="btn btn-primary js-tooltip" href='/api/people/1/' rel="nofollow" title="Make a GET request on the People Instance resource">GET</a>
+<button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=json' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `json`">
+json
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=api' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `api`">
+api
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=wookiee' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `wookiee`">
+wookiee
+</a>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+<form class="button-form" action="/api/people/1/" method="POST">
+<input type='hidden' name='csrfmiddlewaretoken' value='kSaWH0jK48l1z754VQugo0ufwj06M7zD' />
+<input type="hidden" name="_method" value="OPTIONS" />
+<button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the People Instance resource">OPTIONS</button>
+</form>
+<div class="content-main">
+<div class="page-header">
+<h1>People Instance</h1>
+</div>
+<div class="request-info" style="clear: both">
+<pre class="prettyprint"><b>GET</b> /api/people/1/</pre>
+</div>
+<div class="response-info">
+<pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+
+</span>{
+    &quot;name&quot;: &quot;Luke Skywalker&quot;, 
+    &quot;height&quot;: &quot;172&quot;, 
+    &quot;mass&quot;: &quot;77&quot;, 
+    &quot;hair_color&quot;: &quot;blond&quot;, 
+    &quot;skin_color&quot;: &quot;fair&quot;, 
+    &quot;eye_color&quot;: &quot;blue&quot;, 
+    &quot;birth_year&quot;: &quot;19BBY&quot;, 
+    &quot;gender&quot;: &quot;male&quot;, 
+    &quot;homeworld&quot;: &quot;<a href="https://swapi.co/api/planets/1/" rel="nofollow">https://swapi.co/api/planets/1/</a>&quot;, 
+    &quot;films&quot;: [
+        &quot;<a href="https://swapi.co/api/films/2/" rel="nofollow">https://swapi.co/api/films/2/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/6/" rel="nofollow">https://swapi.co/api/films/6/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/3/" rel="nofollow">https://swapi.co/api/films/3/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/1/" rel="nofollow">https://swapi.co/api/films/1/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/7/" rel="nofollow">https://swapi.co/api/films/7/</a>&quot;
+    ], 
+    &quot;species&quot;: [
+        &quot;<a href="https://swapi.co/api/species/1/" rel="nofollow">https://swapi.co/api/species/1/</a>&quot;
+    ], 
+    &quot;vehicles&quot;: [
+        &quot;<a href="https://swapi.co/api/vehicles/14/" rel="nofollow">https://swapi.co/api/vehicles/14/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/vehicles/30/" rel="nofollow">https://swapi.co/api/vehicles/30/</a>&quot;
+    ], 
+    &quot;starships&quot;: [
+        &quot;<a href="https://swapi.co/api/starships/12/" rel="nofollow">https://swapi.co/api/starships/12/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/starships/22/" rel="nofollow">https://swapi.co/api/starships/22/</a>&quot;
+    ], 
+    &quot;created&quot;: &quot;2014-12-09T13:50:51.644000Z&quot;, 
+    &quot;edited&quot;: &quot;2014-12-20T21:17:56.891000Z&quot;, 
+    &quot;url&quot;: &quot;<a href="https://swapi.co/api/people/1/" rel="nofollow">https://swapi.co/api/people/1/</a>&quot;
+}</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="/static/rest_framework/js/jquery-1.8.1-min.1565a889b7d5.js" type="3124441744333cb90544015c-text/javascript"></script>
+<script src="/static/rest_framework/js/bootstrap.min.abda843684d0.js" type="3124441744333cb90544015c-text/javascript"></script>
+<script src="/static/rest_framework/js/prettify-min.709bfcc456c6.js" type="3124441744333cb90544015c-text/javascript"></script>
+<script src="/static/rest_framework/js/default.33da14300902.js" type="3124441744333cb90544015c-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="3124441744333cb90544015c-|49" defer=""></script></body>
+</html>
+, expected: com.jayway.jsonpath.internal.JsonContext@7d151a, reason: not a sub-string
+11:02:48.423 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+11:02:48.589 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+11:02:49.579 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+11:02:51.827 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1877
+11:02:51.993 [main] ERROR com.intuit.karate.StepDefs - FAILED, path: $, actual: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="NONE,NOARCHIVE" />
+<title>Django REST framework</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.a987f72342ee.css" />
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.14cc59083a7d.css" />
+</head>
+<body class="">
+<div class="wrapper">
+<div class="navbar navbar-static-top ">
+<div class="container">
+<span>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand" href="#"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://swapi.co" data-text="SWAPI - the Star Wars API " data-via="phalt_" data-related="phalt_">Tweet</a>
+<script type="c98387227c43b27eb4703423-text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/documentation">Documentation</a></li>
+</ul>
+</div>
+</span>
+<ul class="nav navbar-nav pull-right">
+</ul>
+</div>
+</div>
+<div class="container">
+<ul class="breadcrumb">
+<li><a href="/api/">Api Root</a></li>
+<li><a href="/api/people/">People List</a></li>
+<li class="active"><a href="/api/people/1/">People Instance</a></li>
+</ul>
+
+<div id="content">
+<form id="get-form" class="pull-right">
+<fieldset>
+<div class="btn-group format-selection">
+<a class="btn btn-primary js-tooltip" href='/api/people/1/' rel="nofollow" title="Make a GET request on the People Instance resource">GET</a>
+<button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=json' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `json`">
+json
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=api' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `api`">
+api
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=wookiee' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `wookiee`">
+wookiee
+</a>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+<form class="button-form" action="/api/people/1/" method="POST">
+<input type='hidden' name='csrfmiddlewaretoken' value='s871qmkUMBjJ6hjNCHIPcAFqKfqtymEz' />
+<input type="hidden" name="_method" value="OPTIONS" />
+<button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the People Instance resource">OPTIONS</button>
+</form>
+<div class="content-main">
+<div class="page-header">
+<h1>People Instance</h1>
+</div>
+<div class="request-info" style="clear: both">
+<pre class="prettyprint"><b>GET</b> /api/people/1/</pre>
+</div>
+<div class="response-info">
+<pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+
+</span>{
+    &quot;name&quot;: &quot;Luke Skywalker&quot;, 
+    &quot;height&quot;: &quot;172&quot;, 
+    &quot;mass&quot;: &quot;77&quot;, 
+    &quot;hair_color&quot;: &quot;blond&quot;, 
+    &quot;skin_color&quot;: &quot;fair&quot;, 
+    &quot;eye_color&quot;: &quot;blue&quot;, 
+    &quot;birth_year&quot;: &quot;19BBY&quot;, 
+    &quot;gender&quot;: &quot;male&quot;, 
+    &quot;homeworld&quot;: &quot;<a href="https://swapi.co/api/planets/1/" rel="nofollow">https://swapi.co/api/planets/1/</a>&quot;, 
+    &quot;films&quot;: [
+        &quot;<a href="https://swapi.co/api/films/2/" rel="nofollow">https://swapi.co/api/films/2/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/6/" rel="nofollow">https://swapi.co/api/films/6/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/3/" rel="nofollow">https://swapi.co/api/films/3/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/1/" rel="nofollow">https://swapi.co/api/films/1/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/7/" rel="nofollow">https://swapi.co/api/films/7/</a>&quot;
+    ], 
+    &quot;species&quot;: [
+        &quot;<a href="https://swapi.co/api/species/1/" rel="nofollow">https://swapi.co/api/species/1/</a>&quot;
+    ], 
+    &quot;vehicles&quot;: [
+        &quot;<a href="https://swapi.co/api/vehicles/14/" rel="nofollow">https://swapi.co/api/vehicles/14/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/vehicles/30/" rel="nofollow">https://swapi.co/api/vehicles/30/</a>&quot;
+    ], 
+    &quot;starships&quot;: [
+        &quot;<a href="https://swapi.co/api/starships/12/" rel="nofollow">https://swapi.co/api/starships/12/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/starships/22/" rel="nofollow">https://swapi.co/api/starships/22/</a>&quot;
+    ], 
+    &quot;created&quot;: &quot;2014-12-09T13:50:51.644000Z&quot;, 
+    &quot;edited&quot;: &quot;2014-12-20T21:17:56.891000Z&quot;, 
+    &quot;url&quot;: &quot;<a href="https://swapi.co/api/people/1/" rel="nofollow">https://swapi.co/api/people/1/</a>&quot;
+}</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="/static/rest_framework/js/jquery-1.8.1-min.1565a889b7d5.js" type="c98387227c43b27eb4703423-text/javascript"></script>
+<script src="/static/rest_framework/js/bootstrap.min.abda843684d0.js" type="c98387227c43b27eb4703423-text/javascript"></script>
+<script src="/static/rest_framework/js/prettify-min.709bfcc456c6.js" type="c98387227c43b27eb4703423-text/javascript"></script>
+<script src="/static/rest_framework/js/default.33da14300902.js" type="c98387227c43b27eb4703423-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="c98387227c43b27eb4703423-|49" defer=""></script></body>
+</html>
+, expected: com.jayway.jsonpath.internal.JsonContext@7d151a, reason: not equal
+11:06:59.439 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+11:06:59.604 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+11:07:00.558 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+11:07:02.782 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1934
+11:07:02.946 [main] ERROR com.intuit.karate.StepDefs - FAILED, path: $.name, actual: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="NONE,NOARCHIVE" />
+<title>Django REST framework</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.a987f72342ee.css" />
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.14cc59083a7d.css" />
+</head>
+<body class="">
+<div class="wrapper">
+<div class="navbar navbar-static-top ">
+<div class="container">
+<span>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand" href="#"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://swapi.co" data-text="SWAPI - the Star Wars API " data-via="phalt_" data-related="phalt_">Tweet</a>
+<script type="78f6d688f0635df070c7af91-text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/documentation">Documentation</a></li>
+</ul>
+</div>
+</span>
+<ul class="nav navbar-nav pull-right">
+</ul>
+</div>
+</div>
+<div class="container">
+<ul class="breadcrumb">
+<li><a href="/api/">Api Root</a></li>
+<li><a href="/api/people/">People List</a></li>
+<li class="active"><a href="/api/people/1/">People Instance</a></li>
+</ul>
+
+<div id="content">
+<form id="get-form" class="pull-right">
+<fieldset>
+<div class="btn-group format-selection">
+<a class="btn btn-primary js-tooltip" href='/api/people/1/' rel="nofollow" title="Make a GET request on the People Instance resource">GET</a>
+<button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=json' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `json`">
+json
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=api' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `api`">
+api
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=wookiee' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `wookiee`">
+wookiee
+</a>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+<form class="button-form" action="/api/people/1/" method="POST">
+<input type='hidden' name='csrfmiddlewaretoken' value='PNIP4wyNFdlpdIRXXMbpJj0saI1owGL1' />
+<input type="hidden" name="_method" value="OPTIONS" />
+<button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the People Instance resource">OPTIONS</button>
+</form>
+<div class="content-main">
+<div class="page-header">
+<h1>People Instance</h1>
+</div>
+<div class="request-info" style="clear: both">
+<pre class="prettyprint"><b>GET</b> /api/people/1/</pre>
+</div>
+<div class="response-info">
+<pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+
+</span>{
+    &quot;name&quot;: &quot;Luke Skywalker&quot;, 
+    &quot;height&quot;: &quot;172&quot;, 
+    &quot;mass&quot;: &quot;77&quot;, 
+    &quot;hair_color&quot;: &quot;blond&quot;, 
+    &quot;skin_color&quot;: &quot;fair&quot;, 
+    &quot;eye_color&quot;: &quot;blue&quot;, 
+    &quot;birth_year&quot;: &quot;19BBY&quot;, 
+    &quot;gender&quot;: &quot;male&quot;, 
+    &quot;homeworld&quot;: &quot;<a href="https://swapi.co/api/planets/1/" rel="nofollow">https://swapi.co/api/planets/1/</a>&quot;, 
+    &quot;films&quot;: [
+        &quot;<a href="https://swapi.co/api/films/2/" rel="nofollow">https://swapi.co/api/films/2/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/6/" rel="nofollow">https://swapi.co/api/films/6/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/3/" rel="nofollow">https://swapi.co/api/films/3/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/1/" rel="nofollow">https://swapi.co/api/films/1/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/7/" rel="nofollow">https://swapi.co/api/films/7/</a>&quot;
+    ], 
+    &quot;species&quot;: [
+        &quot;<a href="https://swapi.co/api/species/1/" rel="nofollow">https://swapi.co/api/species/1/</a>&quot;
+    ], 
+    &quot;vehicles&quot;: [
+        &quot;<a href="https://swapi.co/api/vehicles/14/" rel="nofollow">https://swapi.co/api/vehicles/14/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/vehicles/30/" rel="nofollow">https://swapi.co/api/vehicles/30/</a>&quot;
+    ], 
+    &quot;starships&quot;: [
+        &quot;<a href="https://swapi.co/api/starships/12/" rel="nofollow">https://swapi.co/api/starships/12/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/starships/22/" rel="nofollow">https://swapi.co/api/starships/22/</a>&quot;
+    ], 
+    &quot;created&quot;: &quot;2014-12-09T13:50:51.644000Z&quot;, 
+    &quot;edited&quot;: &quot;2014-12-20T21:17:56.891000Z&quot;, 
+    &quot;url&quot;: &quot;<a href="https://swapi.co/api/people/1/" rel="nofollow">https://swapi.co/api/people/1/</a>&quot;
+}</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="/static/rest_framework/js/jquery-1.8.1-min.1565a889b7d5.js" type="78f6d688f0635df070c7af91-text/javascript"></script>
+<script src="/static/rest_framework/js/bootstrap.min.abda843684d0.js" type="78f6d688f0635df070c7af91-text/javascript"></script>
+<script src="/static/rest_framework/js/prettify-min.709bfcc456c6.js" type="78f6d688f0635df070c7af91-text/javascript"></script>
+<script src="/static/rest_framework/js/default.33da14300902.js" type="78f6d688f0635df070c7af91-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="78f6d688f0635df070c7af91-|49" defer=""></script></body>
+</html>
+, expected: com.jayway.jsonpath.internal.JsonContext@77bb0ab5, reason: not a sub-string
+11:08:32.189 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+11:08:32.335 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+11:08:33.245 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+11:08:35.056 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1529
+11:08:35.154 [main] ERROR com.intuit.karate.StepDefs - FAILED, path: $.name, actual: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="NONE,NOARCHIVE" />
+<title>Django REST framework</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.a987f72342ee.css" />
+<link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.14cc59083a7d.css" />
+</head>
+<body class="">
+<div class="wrapper">
+<div class="navbar navbar-static-top ">
+<div class="container">
+<span>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand" href="#"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://swapi.co" data-text="SWAPI - the Star Wars API " data-via="phalt_" data-related="phalt_">Tweet</a>
+<script type="650c37cef829b2394e92dfd8-text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/documentation">Documentation</a></li>
+</ul>
+</div>
+</span>
+<ul class="nav navbar-nav pull-right">
+</ul>
+</div>
+</div>
+<div class="container">
+<ul class="breadcrumb">
+<li><a href="/api/">Api Root</a></li>
+<li><a href="/api/people/">People List</a></li>
+<li class="active"><a href="/api/people/1/">People Instance</a></li>
+</ul>
+
+<div id="content">
+<form id="get-form" class="pull-right">
+<fieldset>
+<div class="btn-group format-selection">
+<a class="btn btn-primary js-tooltip" href='/api/people/1/' rel="nofollow" title="Make a GET request on the People Instance resource">GET</a>
+<button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=json' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `json`">
+json
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=api' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `api`">
+api
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href='/api/people/1/?format=wookiee' rel="nofollow" title="Make a GET request on the People Instance resource with the format set to `wookiee`">
+wookiee
+</a>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+<form class="button-form" action="/api/people/1/" method="POST">
+<input type='hidden' name='csrfmiddlewaretoken' value='CJX6AvZKnkc5j9jrRhDsYgy3jtqbz1Q7' />
+<input type="hidden" name="_method" value="OPTIONS" />
+<button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the People Instance resource">OPTIONS</button>
+</form>
+<div class="content-main">
+<div class="page-header">
+<h1>People Instance</h1>
+</div>
+<div class="request-info" style="clear: both">
+<pre class="prettyprint"><b>GET</b> /api/people/1/</pre>
+</div>
+<div class="response-info">
+<pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+
+</span>{
+    &quot;name&quot;: &quot;Luke Skywalker&quot;, 
+    &quot;height&quot;: &quot;172&quot;, 
+    &quot;mass&quot;: &quot;77&quot;, 
+    &quot;hair_color&quot;: &quot;blond&quot;, 
+    &quot;skin_color&quot;: &quot;fair&quot;, 
+    &quot;eye_color&quot;: &quot;blue&quot;, 
+    &quot;birth_year&quot;: &quot;19BBY&quot;, 
+    &quot;gender&quot;: &quot;male&quot;, 
+    &quot;homeworld&quot;: &quot;<a href="https://swapi.co/api/planets/1/" rel="nofollow">https://swapi.co/api/planets/1/</a>&quot;, 
+    &quot;films&quot;: [
+        &quot;<a href="https://swapi.co/api/films/2/" rel="nofollow">https://swapi.co/api/films/2/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/6/" rel="nofollow">https://swapi.co/api/films/6/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/3/" rel="nofollow">https://swapi.co/api/films/3/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/1/" rel="nofollow">https://swapi.co/api/films/1/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/films/7/" rel="nofollow">https://swapi.co/api/films/7/</a>&quot;
+    ], 
+    &quot;species&quot;: [
+        &quot;<a href="https://swapi.co/api/species/1/" rel="nofollow">https://swapi.co/api/species/1/</a>&quot;
+    ], 
+    &quot;vehicles&quot;: [
+        &quot;<a href="https://swapi.co/api/vehicles/14/" rel="nofollow">https://swapi.co/api/vehicles/14/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/vehicles/30/" rel="nofollow">https://swapi.co/api/vehicles/30/</a>&quot;
+    ], 
+    &quot;starships&quot;: [
+        &quot;<a href="https://swapi.co/api/starships/12/" rel="nofollow">https://swapi.co/api/starships/12/</a>&quot;, 
+        &quot;<a href="https://swapi.co/api/starships/22/" rel="nofollow">https://swapi.co/api/starships/22/</a>&quot;
+    ], 
+    &quot;created&quot;: &quot;2014-12-09T13:50:51.644000Z&quot;, 
+    &quot;edited&quot;: &quot;2014-12-20T21:17:56.891000Z&quot;, 
+    &quot;url&quot;: &quot;<a href="https://swapi.co/api/people/1/" rel="nofollow">https://swapi.co/api/people/1/</a>&quot;
+}</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="/static/rest_framework/js/jquery-1.8.1-min.1565a889b7d5.js" type="650c37cef829b2394e92dfd8-text/javascript"></script>
+<script src="/static/rest_framework/js/bootstrap.min.abda843684d0.js" type="650c37cef829b2394e92dfd8-text/javascript"></script>
+<script src="/static/rest_framework/js/prettify-min.709bfcc456c6.js" type="650c37cef829b2394e92dfd8-text/javascript"></script>
+<script src="/static/rest_framework/js/default.33da14300902.js" type="650c37cef829b2394e92dfd8-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="650c37cef829b2394e92dfd8-|49" defer=""></script></body>
+</html>
+, expected: com.jayway.jsonpath.internal.JsonContext@77bb0ab5, reason: not a sub-string
+11:08:51.633 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+11:08:51.793 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+11:08:52.664 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+11:08:54.397 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1454
+11:10:15.937 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.ExamplesTest
+11:10:16.096 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+11:10:17.027 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+11:10:19.184 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1836
+15:04:00.051 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+15:04:03.273 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 2799
+15:04:37.973 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class examples.users.UsersRunner
+15:04:38.127 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/examples/users/users.feature
+15:04:38.974 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+15:04:40.834 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 1493
+15:04:41.160 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 100
+15:04:41.281 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+15:04:42.114 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 656
+15:04:42.169 [main] INFO  com.intuit.karate.StepDefs - [print] created id is: 11
+15:05:14.021 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.IlkRestApiRunner
+15:05:14.491 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+15:05:15.336 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+15:05:19.043 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 3442
+15:07:33.361 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class ilkRestApiTest.IlkRestApiRunner
+15:07:33.875 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/sahabt/Documents/MavenDev/karatedeneme/target/test-classes/ilkRestApiTest/ilkRestApiTest.feature
+15:07:37.605 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+15:07:43.508 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 3967
